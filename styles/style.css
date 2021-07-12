@@ -181,6 +181,8 @@ hr {
 
 .course-author {
   margin: 6px 6px;
+  color: #ed6b4f;
+  font-size: 14.6913px;
 }
 
 .course-info {
@@ -200,6 +202,18 @@ hr {
 
 .fa-star.empty {
   color: #aeaeae;
+}
+
+.course-info span {
+  color: #a2a2a2;
+}
+
+.course-duration {
+  background: #ffe4e8;
+  border-radius: 14.6913px;
+  padding: 4px;
+  color: #ff4a60;
+  font-size: 14.6913px;
 }
 
 /* Media Queries */
