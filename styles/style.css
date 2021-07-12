@@ -33,6 +33,63 @@ hr {
   border: 1px solid #d1d1d1;
 }
 
+/* header part start */
+
+.header {
+  height: 94px;
+  width: 100%;
+
+  background-color: #562eff;
+}
+
+.header-section {
+  width: 870px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img a img {
+  height: 51px;
+  width: 42px;
+}
+
+.logo-img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logo-text a {
+  color: #ffff;
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.manu-section {
+  display: flex;
+  align-items: center;
+}
+
+.manu a {
+  color: #ffff;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 94px;
+  margin-right: 10px;
+}
+
+.profile-img a img {
+  width: 45px;
+  height: 45px;
+}
+
 /* top players styles */
 .top-players {
   margin-bottom: 30px;
@@ -150,8 +207,10 @@ hr {
 /* Mobile Devices */
 
 @media only screen and (max-width: 688px) {
-  .container {
+  .container,
+  .header {
     width: 100%;
+    margin: auto;
   }
   .section-title {
     text-align: center;
@@ -171,22 +230,34 @@ hr {
   .blog-info {
     flex-direction: row;
   }
+
+  .manu-section {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 20px;
+  }
 }
 
 /* tablet devices */
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-  .container {
+  .container,
+  .header {
     width: 100%;
+    margin: auto;
   }
   .section-title {
     text-align: center;
   }
   .players,
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  .blogs,
   .courses {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .manu-section {
+    /* display: none; */
   }
 }
